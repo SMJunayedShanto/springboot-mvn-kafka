@@ -1,0 +1,11 @@
+run zookeeper in windows::
+
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+#run kafka server in windows::
+
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+#run consumer in windows::
+
+.\bin\windows\kafka-console-consumer.bat --topic topicName --from-beginning --bootstrap-server localhost:9092
